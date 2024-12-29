@@ -5,7 +5,7 @@ title: Nations report (Lebanon)
 ## The Nations report (Lebanon)
 
 ```js
-import {nationsTimeline} from "./components/nations-timeline.js";
+import {customScatterPlot} from "./components/custom-scatter-plot.js";
 ```
 
 ```js
@@ -15,11 +15,11 @@ const selectedNation = nations.find((n)=>n.name === 'Lebanon');
 <div class="grid grid-cols-2">
   <div class="card">
     <h4>Income</h4>
-    ${nationsTimeline(selectedNation.income)}
+    ${customScatterPlot(selectedNation.income)}
   </div>
   <div class="card">
     <h4>Population</h4>
-    ${nationsTimeline(selectedNation.population)}
+    ${customScatterPlot(selectedNation.population)}
   </div>
 </div>
 
