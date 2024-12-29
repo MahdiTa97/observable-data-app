@@ -1,4 +1,4 @@
-# Observalbe Data App
+# Observable Data App
 
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
 
@@ -24,12 +24,15 @@ A typical Framework project looks like this:
 .
 ├─ src
 │  ├─ components
-│  │  └─ timeline.js           # an importable module
+│  │  └─ timeline.js  # an importable module
+│  │  └─ custom-scatter-plot.js          # an importable module
 │  ├─ data
 │  │  ├─ launches.csv.js       # a data loader
 │  │  └─ events.json           # a static data file
+│  │  └─ nations.json           # a static data file
 │  ├─ example-dashboard.md     # a page
 │  ├─ example-report.md        # another page
+│  ├─ nations-report.md        # nations-report page
 │  └─ index.md                 # the home page
 ├─ .gitignore
 ├─ observablehq.config.js      # the app config file
